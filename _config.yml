@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   a contests que despacha os códigos para outro "online judge" ao invés de 
   executar e verificar a corretude da solução. <br>Porém, também conta com seu
   próprio módulo de "online judge".
-baseurl: "/cdmoj-docs/" # the subpath of your site, e.g. /blog
+baseurl: "/cd-moj.docs/" # the subpath of your site, e.g. /blog
 url: "https://cd-moj.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: bcribas
 
