@@ -1,6 +1,3 @@
-# cd-moj.github.io
-
-
 O Contest-Driven Meta Online Judge (CD-MOJ) é um online judge direcionado a contests que despacha os códigos para outro "online judge" ao invés de executar e verificar a corretude da solução. Porém, um módulo experimental de incluir problemas novos está sendo desenvolvido.
 
 
