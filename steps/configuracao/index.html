@@ -480,6 +480,12 @@
                         Configurando apache cgi-bin
                       </a>
                     </li>
+
+                    <li class="md-nav__item">
+                      <a href="#configurando-CD-MOJ" class="md-nav__link">
+                        Configurando CD-MOJ
+                      </a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -547,9 +553,9 @@
 
         ErrorLog ${APACHE_LOG_DIR}/moj.com.br-error.log
         CustomLog ${APACHE_LOG_DIR}/moj.com.br-access.log combined
-
+        
         Include conf-available/serve-cgi-bin.conf
-
+        
         ScriptAlias /cgi-bin/ /home/$USER/cdmoj/moj-pagina/cgi-bin/
 &lt;Directory &quot;/&quot;&gt;
         Options Indexes FollowSymLinks MultiViews Includes
@@ -566,12 +572,12 @@
               <p>Reinicie o serviço apache:</p>
               <pre><code class="language-bash">$ sudo systemctl reload apache2
 </code></pre>
+              <h4 id="configurando-CD-MOJ">Configurando do CD-MOJ</h4>
               <p>
                 Edite o arquivo common.conf que está dentro do diretório
                 moj-serverside:
               </p>
-              <pre><code class="language-bash">$ sudo nano $HOME/cdmoj/moj-serverside/etc/common.conf
-</code></pre>
+              <pre><code class="language-bash">$ sudo nano $HOME/cdmoj/moj-serverside/etc/common.conf</code></pre>
               <p>Esse arquivo deve se parecer com o seguinte:</p>
               <pre><code class="language-bash">CACHEDIR=$HOME/tmp
 CONTESTSDIR=$HOME/cdmoj/contests
