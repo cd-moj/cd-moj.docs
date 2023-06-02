@@ -24,11 +24,14 @@ nav:
   - Início: index.md
   - Instalação:
     - Instalação: steps/instalacao.md
+  - Configuração:
     - Configuração: steps/configuracao.md
+    - Erros: steps/permissions.md
   - Sobre:
     - Sobre cd moj: steps/aboutCdMoj.md
     - Judge: steps/judge.md
   - Contest:
     - Contest: steps/contest.md  
+  - Contribuição: steps/mkdocs.md
 
 dev_addr: "0.0.0.0:8000"
