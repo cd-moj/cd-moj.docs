@@ -9,7 +9,7 @@ $ sudo nano /etc/apache2/apache2.conf
 Adicione as seguintes linhas no final do arquivo:
 
 ```apache
-  <Directory /home/cdmoj/moj-pagina/>
+  <Directory /home/$USER/cdmoj/moj-pagina/>
       Options +ExecCGI
       AddHandler cgi-script .cgi .sh
   </Directory>
@@ -53,8 +53,8 @@ Dentro desse arquivo há um trecho parecido com esse:
 Modifique as seguintes linhas e salve o arquivo:
 
 ```apache
-ScriptAlias /cgi-bin/  /home/cdmoj/moj-pagina/cgi-bin/
-<Directory "/home/cdmoj/moj-pagina/cgi-bin/">
+ScriptAlias /cgi-bin/  /home/$USER/cdmoj/moj-pagina/cgi-bin/
+<Directory "/home/$USER/cdmoj/moj-pagina/cgi-bin/">
 ```
 
 Crie um arquivo para o site cd-moj:
@@ -70,14 +70,14 @@ Esse arquivo deve se parecer com o seguinte:
         ServerName moj.com.br
 
         ServerAdmin webmaster@localhost
-        DocumentRoot /home/cdmoj/moj-pagina/
+        DocumentRoot /home/$USER/cdmoj/moj-pagina/
 
         ErrorLog ${APACHE_LOG_DIR}/moj.com.br-error.log
         CustomLog ${APACHE_LOG_DIR}/moj.com.br-access.log combined
 
         Include conf-available/serve-cgi-bin.conf
 
-        ScriptAlias /cgi-bin/ /home/cdmoj/moj-pagina/cgi-bin/
+        ScriptAlias /cgi-bin/ /home/$USER/cdmoj/moj-pagina/cgi-bin/
 <Directory "/">
         Options Indexes FollowSymLinks MultiViews Includes
         Require all granted
@@ -103,20 +103,22 @@ Reinicie o serviço apache:
 $ sudo systemctl reload apache2
 ```
 
+---
+
+### Configurando do CD-MOJ
+
 Edite o arquivo common.conf que está dentro do diretório moj-serverside:
 
 ```bash
-$ sudo nano /home/$USER/moj-serverside/etc/common.conf
+$ sudo nano $HOME/cdmoj/moj-serverside/etc/common.conf
 ```
 
 Esse arquivo deve se parecer com o seguinte:
 
 ```bash
-CACHEDIR=$HOME/tmp/
-CONTESTSDIR=$HOME/cdmoj/moj/contests
-SUBMISSIONDIR=$HOME/cdmoj/moj/submissions
+CACHEDIR=$HOME/tmp
+CONTESTSDIR=$HOME/cdmoj/contests
+SUBMISSIONDIR=$HOME/cdmoj/submissions
 BASEURL="http://localhost"
 HTMLDIR=$HOME/cdmoj/moj-pagina
 ```
-
-* * *

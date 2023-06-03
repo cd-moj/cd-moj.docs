@@ -1,13 +1,38 @@
-O Contest-Driven Meta Online Judge (CD-MOJ) é um online judge direcionado a contests que despacha os códigos para outro "online judge" ao invés de executar e verificar a corretude da solução. Porém, um módulo experimental de incluir problemas novos está sendo desenvolvido.
+O Contest-Driven Meta Online Judge
+[(CD-MOJ)](https://moj.naquadah.com.br/cgi-bin/index.sh) é um online judge direcionado a contests que despacha os
+códigos para outro "online judge" ao invés de executar e
+verificar a corretude da solução. Porém, um módulo experimental
+de incluir problemas novos está sendo desenvolvido.
 
+A motivação por trás da implementação desse sistema foi
+facilitar o treinamento das equipes para a Maratona de
+Programação da UTFPR - Câmpus Pato Branco, permitindo a
+utilização de problemas do
+[SPOJ-BR](https://br.spoj.com/) e do
+[URI-OJ](https://www.beecrowd.com.br/judge/pt/login),
+que possuem enunciados em português. Felizmente, o projeto
+cresceu além do esperado e já tivemos competições com mais de 30
+participantes resolvendo problemas. Com base em minha breve
+experiência, posso afirmar que ter um sistema ágil para
+selecionar problemas e iniciar uma competição para um grupo de
+alunos é extremamente valioso.
 
-A motivação para implementar esse sistema foi para facilitar o treinamento das equipes para a Maratona de Programação da UTFPR - Câmpus Pato Branco e que fosse possível pegar problemas do spoj-br e URI-OJ por possuírem problemas em português. Mas, felizmente, tomou proporções maiores que o esperado, chegando a ter contest com mais de 30 pessoas logadas resolvendo os problemas. Nessa minha breve experiência posso dizer que ter um sistema rápido para escolher alguns problemas e disparar um contest para um grupo de alunos é extremamente valioso.
+A implementação, administração e manutenção do
+[CD-MOJ](https://moj.naquadah.com.br/cgi-bin/index.sh)
+são realizadas por mim, Bruno Ribas, sempre que tenho algum
+tempo livre e meus alunos dispostos a contribuir com o projeto.
+Como não sou nenhum entendido de tecnologia WEB entende-se o
+motivo de algumas, várias, falhas na interface. A aparência
+geral do sistema é agradável, pois foi desenvolvida por uma
+designer profissional, embora originalmente para outro projeto,
+o que pode explicar algumas inconsistências presentes
+atualmente.
 
+Por enquanto, não temos um logotipo, mas estou aberto a
+sugestões. Se você quiser enviar uma proposta, basta me contatar
+por e-mail, endereço disponível no parágrafo abaixo.
 
-A implementação, administração e cuidados são feitos por mim, Bruno Ribas, quando tenho algum tempo "livre". Como não sou nenhum entendido de tecnologia WEB entende-se o motivo de algumas, várias, falhas na interface. A aparência, em geral, é bonita pois foi feita por uma designer de verdade, mas para outro projeto, por isso algumas coisas podem parecer fora do lugar nesse momento.
-
-
-O logotipo, por enquanto, não existe, mas eu sempre aceito propostas, para mandar uma sugestão basta enviar para mim (o email está em algum parágrafo abaixo.
-
-
-Se você quiser ser administrador, podendo criar contests, pode enviar um email para bruno.ribas _AT_ unb.br, será muito legal ter mais pessoas criando contests.
+Se você estiver interessado em se tornar um administrador, com
+permissão para criar competições, fique à vontade para enviar um
+e-mail para [bruno.ribas@unb.br](mailto:bruno.ribas@unb.br). Será
+ótimo ter mais pessoas envolvidas na criação de competições.
