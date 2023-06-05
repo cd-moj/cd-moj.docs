@@ -32,6 +32,7 @@ nav:
     - Judge: steps/judge.md
   - Contest:
     - Contest: steps/contest.md  
+    - Subindo Contest: steps/contestAdmin.md
   - Contribuição: steps/mkdocs.md
 
 dev_addr: "0.0.0.0:8000"
