@@ -10,6 +10,15 @@ O MkDocs utiliza o Markdown, uma linguagem de marcação leve, como formato prin
 
 ---
 
+### Começando
+Faça o clone do repositorio de documentação com o comando:
+
+```
+git clone https://github.com/cd-moj/cd-moj.docs
+git switch main
+```
+Note que a temos duas branchs **gh-deploy** onde estão os arquivos de deploy, a aplicação após o build e **main** onde estão os arquivos source. Assim, as alterações devem ser feitas na branch **main**. para mais informaçẽos acesse a documentação do [Mkdocs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
+
 ### mkdocs serve
 
 Para subir localmente a aplicação use o comando
@@ -37,3 +46,4 @@ Para realizar o deploy utilize o comando
 ```
 mkdocs gh-deploy
 ```
+Importante verificar as alterações feitas nos documentos de antemão usando os comandos **build** ou **serve**.
