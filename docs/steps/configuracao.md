@@ -1,4 +1,4 @@
-#### Configurando apache cgi-bin
+## Configurando apache cgi-bin
 
 Primeiramente acesse o arquivo de configuração do apache:
 
@@ -105,7 +105,7 @@ $ sudo systemctl reload apache2
 
 ---
 
-### Configurando do CD-MOJ
+## Configurando do CD-MOJ
 
 Edite o arquivo common.conf que está dentro do diretório moj-serverside:
 
@@ -121,4 +121,40 @@ CONTESTSDIR=$HOME/cdmoj/contests
 SUBMISSIONDIR=$HOME/cdmoj/submissions
 BASEURL="http://localhost"
 HTMLDIR=$HOME/cdmoj/moj-pagina
+```
+
+---
+
+### Criando um administrador
+
+Para criar um contest é necessário um usuário administrador para poder enviar um arquivo com contest ou submeter um formulário com os dados necessários. Para isso é preciso criar um diretório dentro do caminho **/moj/contests/** chamado admin, logo após crie dois arquivos chamados **conf** e **passwd**. Segue o exemplo dos arquivos:
+
+#### conf
+
+```
+CONTEST_ID="admin"
+CONTEST_NAME="admin"
+CONTEST_START=Gere uma data de inicio utilizando o comando "date --date="15:00:00 today" +%s"
+CONTEST_END=Gere uma data de termino utilizando o comando "date --date="15:00:00 today" +%s"
+```
+
+#### passwd
+
+```
+usuario.admin:senhaAdmin:Usuario Administrador
+```
+
+---
+
+## Erros Comuns
+
+### Permissões
+
+Abaixo seguem algumas permissões necessárias para que seja possível rodar o CD-MOJ com sucesso localmente.
+
+```bash
+cd cdmoj
+chwon -R www-data:www-data ./contests
+chwon -R user.user ./contest/
+sudo chmod 777 submissions/
 ```

@@ -36,3 +36,7 @@ Se você estiver interessado em se tornar um administrador, com
 permissão para criar competições, fique à vontade para enviar um
 e-mail para [bruno.ribas@unb.br](mailto:bruno.ribas@unb.br). Será
 ótimo ter mais pessoas envolvidas na criação de competições.
+
+Se você estiver interessado em se tornar um contribuidor, fique à
+vontade para enviar um e-mail para [bruno.ribas@unb.br](mailto:bruno.ribas@unb.br)
+ou atraves da pagina no [github](https://github.com/cd-moj/cdmoj).

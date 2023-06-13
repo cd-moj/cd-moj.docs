@@ -22,17 +22,18 @@ extra_css:
 
 nav:
   - Início: index.md
-  - Instalação:
-    - Instalação: steps/instalacao.md
-  - Configuração:
-    - Configuração: steps/configuracao.md
-    - Erros: steps/permissions.md
-  - Sobre:
-    - Sobre cd moj: steps/aboutCdMoj.md
-    - Judge: steps/judge.md
-  - Contest:
-    - Contest: steps/contest.md  
+
+  - Usuário:
+    - Sobre: steps/aboutCdMoj.md
+
+  - Administrador:
     - Subindo Contest: steps/contestAdmin.md
-  - Contribuição: steps/mkdocs.md
+
+  - Desenvolvedor:
+    - Instalação: steps/instalacao.md
+    - Configuração: steps/configuracao.md
+    - Contribuição: steps/mkdocs.md
+    - Judge: steps/judge.md
+    - Contest: steps/contest.md
 
 dev_addr: "0.0.0.0:8000"
