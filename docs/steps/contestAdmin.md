@@ -96,7 +96,7 @@ SHOWCODE=1
 
 Você tambem pode criar um contest por meio de um formulário, segue os mesmos padrões dos dados explicados em [contest-description](#contest-descriptiontxt).
 
-![form](../../assets/images/form_create_contest.jpg)
+![form](assets/form_create_contest.jpg)
 
 ---
 
