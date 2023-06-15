@@ -3,6 +3,13 @@ site_name: CD-Moj
 repo_name: "cd-moj.docs"
 repo_url: "https://github.com/cd-moj/cd-moj.docs"
 
+markdown_extensions:
+  - pymdownx.pathconverter:
+      base_path: 'cd-moj.docs'
+      relative_path: ''
+      absolute: true
+      tags: 'a script img link object embed'
+
 theme:
   name: material
   language: "pt"
@@ -35,5 +42,8 @@ nav:
     - Contribuição: steps/mkdocs.md
     - Judge: steps/judge.md
     - Contest: steps/contest.md
+  
+  - Contribuição:
+    - Contribuidores: steps/contribuidores.md
 
 dev_addr: "0.0.0.0:8000"
