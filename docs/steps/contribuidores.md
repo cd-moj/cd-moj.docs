@@ -20,7 +20,7 @@ hide:
                 <h5>Gustavo Martins</h5>
         </a>
         <div style="display: flex; flex-direction: column">
-            <a href="/steps/extGustavo/" class="image fit">Extenção 2017 - 2018</a>
+            <a href="/steps/projetos/extGustavo/" class="image fit">Extenção 2017 - 2018</a>
             <a href="https://github.com/cd-moj/cdmoj/commits?author=Gustavooguto">Commits CD-MOJ</a>
         </div>
     </div>
@@ -30,7 +30,7 @@ hide:
                 <h5>Luciano dos Santo</h5>
         </a>
         <div style="display: flex; flex-direction: column">
-            <a href="/steps/tccLuciano/" class="image fit">TCC 2021 - 2022</a>
+            <a href="/steps/projetos/tccLuciano/" class="image fit">TCC 2021 - 2022</a>
             <a href="https://github.com/cd-moj/cdmoj/commits?author=lucianosz7">Commits CD-MOJ</a>
             <a href="https://github.com/cd-moj/cd-moj.docs/commits?author=lucianosz7"> Commits Documentação</a>
         </div>
