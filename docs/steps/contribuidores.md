@@ -11,6 +11,7 @@ hide:
         <a href="https://github.com/bcribas">
                 <img style="border-radius: 50%;" src="https://github.com/bcribas.png" width="100px;"/>
                 <h5>Bruno Ribas</h5>
+                <h5>Professor & Wizard</h5>
         </a>
         <a href="https://github.com/cd-moj/cdmoj/commits?author=bcribas">Commits CD-MOJ</a>
     </div>
@@ -27,7 +28,7 @@ hide:
     <div>
         <a href="https://github.com/lucianosz7">
                 <img style="border-radius: 50%;" src="https://github.com/lucianosz7.png" width="100px;"/>
-                <h5>Luciano dos Santo</h5>
+                <h5>Luciano dos Santos</h5>
         </a>
         <div style="display: flex; flex-direction: column">
             <a href="/steps/projetos/tccLuciano/" class="image fit">TCC 2021 - 2022</a>
