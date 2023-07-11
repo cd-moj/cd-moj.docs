@@ -32,8 +32,10 @@ nav:
   - Desenvolvedor:
     - Instalação: steps/instalacao.md
     - Configuração: steps/configuracao.md
-    - Contribuição: steps/mkdocs.md
+    - MkDocs: steps/mkdocs.md
+    - Contribuição: steps/contribuicao.md
     - Judge: steps/judge.md
     - Contest: steps/contest.md
+    - Simular: steps/simular.md
 
 dev_addr: "0.0.0.0:8000"
