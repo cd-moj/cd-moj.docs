@@ -15,7 +15,7 @@
         <link rel="next" href="../instalacao/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -108,6 +108,8 @@
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -428,20 +430,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#daemons" class="md-nav__link">
-    Daemons
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercicios" class="md-nav__link">
-    Exercícios
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#contest" class="md-nav__link">
     Contest
   </a>
@@ -478,20 +466,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-a-passo-para-entrar-no-contest" class="md-nav__link">
-    Passo a passo para entrar no contest
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#possiveis-erros" class="md-nav__link">
-    Possíveis erros
-  </a>
   
 </li>
       
@@ -719,20 +693,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#daemons" class="md-nav__link">
-    Daemons
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercicios" class="md-nav__link">
-    Exercícios
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#contest" class="md-nav__link">
     Contest
   </a>
@@ -772,20 +732,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#passo-a-passo-para-entrar-no-contest" class="md-nav__link">
-    Passo a passo para entrar no contest
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#possiveis-erros" class="md-nav__link">
-    Possíveis erros
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -805,12 +751,6 @@
 
 
 <h1 id="guia-para-subir-contest">Guia para subir contest</h1>
-<h2 id="daemons">Daemons</h2>
-<p>O primeiro passo é importante se você esta rodanto uma instância local é subir ambos daemons, executar-corretor.sh e executar-julgador.sh, e se certificar de que ambos estão conversando entre si corretamente. Os comandos para subir ambos daemons são: <code>bash executar-julgador.sh</code> e <code>bash executar-corretor.sh</code></p>
-<hr />
-<h2 id="exercicios">Exercícios</h2>
-<p>É possível que você não tenha acesso nas máquinas do Ribas que corrigem os exercícios, logo é interessante que se utilize exercícios listados no Spoj e é necessário que você tenha uma conta criada no mesmo e cadastrada no arquivo judge.conf.</p>
-<hr />
 <h2 id="contest">Contest</h2>
 <p>O arquivo contest-description.txt deve estar corretamente preenchido e precisa obrigatoriamente estar compactado no formato <strong>.tar</strong> seguindo o exemplo abaixo:</p>
 <h3 id="contest-descriptiontxt">contest-description.txt</h3>
@@ -882,20 +822,8 @@ SHOWCODE=1
 <hr />
 <h3 id="formulario">Formulário</h3>
 <p>Você tambem pode criar um contest por meio de um formulário, segue os mesmos padrões dos dados explicados em <a href="#contest-descriptiontxt">contest-description</a>.</p>
-<p><img alt="form" src="/steps/assets/form_create_contest.jpg" /></p>
+<p><img alt="form" src="/teste/assets/images/form_create_contest.jpg" /></p>
 <hr />
-<h2 id="passo-a-passo-para-entrar-no-contest">Passo a passo para entrar no contest</h2>
-<ol>
-<li>É necessário entrar no link <a href="http://localhost/cgi-bin/index.sh">localhost contest</a>;</li>
-<li>Realizar o login com a conta e nível desejado;</li>
-</ol>
-<hr />
-<h2 id="possiveis-erros">Possíveis erros</h2>
-<p>Se houve algum erro ao criar um contest em uma instância local certifique se os steps foram seguidos corretamente <a href="#daemons">Daemons</a>, <a href="#exercicios">Exercícios</a> e <a href="#contest">Contest</a>. Para mais informações entrar no root do seu pc utilizando os comandos abaixo:</p>
-<pre><code>sudo -i
-tail -f /var/log/apache2/*.log
-
-</code></pre>
 
 
 
@@ -933,10 +861,10 @@ tail -f /var/log/apache2/*.log
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": "navigation.tabs", "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": "navigation.tabs", "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>

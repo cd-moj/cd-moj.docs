@@ -15,7 +15,7 @@
         <link rel="next" href="../simular/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -108,6 +108,8 @@
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -563,6 +565,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    Exercícios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-a-passo-para-entrar-no-contest" class="md-nav__link">
+    Passo a passo para entrar no contest
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -686,6 +702,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    Exercícios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-a-passo-para-entrar-no-contest" class="md-nav__link">
+    Passo a passo para entrar no contest
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -707,7 +737,7 @@
   <h1>Contest</h1>
 
 <h3 id="script-de-criacao-de-contest">Script de criação de contest</h3>
-<p>Dentro do diretório <strong>bin</strong> é disponibilizado o script <strong>cria-contest.sh</strong> responsável por configurar toda a estrutura do contest.</p>
+<p>Dentro do diretório bin é disponibilizado o script cria-contest.sh responsável por configurar toda a estrutura do contest.</p>
 <hr />
 <h3 id="scripts-de-api">Scripts de API</h3>
 <p>A seguir, são descritos os scripts que se comunicam com as APIs dos juízes online e com o próprio juiz do cd-moj. São duas APIs que são utilizadas, além da própria API do cd-moj.</p>
@@ -721,20 +751,32 @@
 <li><strong>pega-resultado-spoj</strong> - Recupera a resposta do juiz online por meio de uma requisição.</li>
 <li><strong>login-spoj-br</strong> - Realiza uma requisição e salva o cookie do login spoj-br se a requisição for bem-sucedida.</li>
 <li><strong>login-spoj-www</strong> - Realiza uma requisição e salva o cookie do login spoj-www se a requisição for bem-sucedida.</li>
-<li><s>enviar-uri.sh</s> <strong>[Depreciado]</strong> - Dentro desse script há funções responsáveis por fazer requisições para o antigo URI online judge, essas funções são: - <strong>login-uri</strong> - Realiza uma requisição e salva o cookie do login se a requisição for bem sucedida. - <strong>enviar-uri</strong> - Responsável por realizar uma requisição para a API do URI e enviar os dados da submissão com a solução do problema. - <strong>pega-resultado-uri</strong> - Responsável por recuperar a resposta do juiz online por uma requisição através do ID da submissão.</li>
+<li><s>enviar-uri.sh</s> <strong>[Depreciado]</strong> - Dentro desse script há funções responsáveis por fazer requisições para o antigo URI online judge, essas funções são: </li>
+<li><strong>login-uri</strong> - Realiza uma requisição e salva o cookie do login se a requisição for bem sucedida.</li>
+<li><strong>enviar-uri</strong> - Responsável por realizar uma requisição para a API do URI e enviar os dados da submissão com a solução do problema.</li>
+<li><strong>pega-resultado-uri</strong> - Responsável por recuperar a resposta do juiz online por uma requisição através do ID da submissão.</li>
 <li><strong>cdmoj-cgi.sh</strong> - Script responsável por redirecionar para os problemas do cd-moj.</li>
 <li><strong>spoj-cgi.sh</strong> - Script responsável por redirecionar para os problemas do spoj e spoj-br.</li>
 <li><s>uri-cgi.sh</s> <strong>[Depreciado]</strong> - Script responsável por redirecionar para os problemas do URI.</li>
 <li><strong>oj-links.sh</strong> - Script que o CGI deve originar para obter as funções do CGI.</li>
 </ul>
-<p><strong>OBS:</strong> Caso ocorra algum erro no envio da submissão para os respectivos sites, verifique a existência dos arquivos <strong>$HOME/.cache/cookie-spoj-www</strong> ou <strong>$HOME/.cache/cookie-spoj-br</strong>.</p>
+<p><strong>OBS:</strong> Caso ocorra algum erro no envio da submissão para os respectivos sites, verifique a existência dos arquivos $HOME/.cache/cookie-spoj-www ou $HOME/.cache/cookie-spoj-br.</p>
 <hr />
 <h3 id="arquivos-de-configuracao">Arquivos de configuração</h3>
-<p>Dentro do diretório <strong>etc</strong> são encontrados dois arquivos:</p>
+<p>Dentro do diretório etc são encontrados dois arquivos:</p>
 <ul>
 <li><strong>common.conf</strong> - Declara variáveis contendo os caminhos para os diretórios utilizados pelo sistema cd-moj.</li>
 <li><strong>judge.conf</strong> - Declara variáveis que contêm os dados para realizar requisições às APIs dos juízes.</li>
 </ul>
+<hr />
+<h2 id="exercicios">Exercícios</h2>
+<p>É possível que você não tenha acesso nas máquinas do Ribas que corrigem os exercícios, logo é interessante que se utilize exercícios listados no Spoj e é necessário que você tenha uma conta criada no mesmo e cadastrada no arquivo judge.conf.</p>
+<hr />
+<h2 id="passo-a-passo-para-entrar-no-contest">Passo a passo para entrar no contest</h2>
+<ol>
+<li>É necessário entrar no link <a href="http://localhost/cgi-bin/index.sh">localhost contest</a>;</li>
+<li>Realizar o login com a conta e nível desejado;</li>
+</ol>
 <hr />
 
 
@@ -773,10 +815,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": "navigation.tabs", "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": "navigation.tabs", "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>
