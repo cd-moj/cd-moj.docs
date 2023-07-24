@@ -1,17 +1,5 @@
 # Guia para subir contest
 
-## Daemons
-
-O primeiro passo é importante se você esta rodanto uma instância local é subir ambos daemons, executar-corretor.sh e executar-julgador.sh, e se certificar de que ambos estão conversando entre si corretamente. Os comandos para subir ambos daemons são: `bash executar-julgador.sh` e `bash executar-corretor.sh`
-
----
-
-## Exercícios
-
-É possível que você não tenha acesso nas máquinas do Ribas que corrigem os exercícios, logo é interessante que se utilize exercícios listados no Spoj e é necessário que você tenha uma conta criada no mesmo e cadastrada no arquivo judge.conf.
-
----
-
 ## Contest
 
 O arquivo contest-description.txt deve estar corretamente preenchido e precisa obrigatoriamente estar compactado no formato **.tar** seguindo o exemplo abaixo:
@@ -96,23 +84,6 @@ SHOWCODE=1
 
 Você tambem pode criar um contest por meio de um formulário, segue os mesmos padrões dos dados explicados em [contest-description](#contest-descriptiontxt).
 
-![form](/steps/assets/form_create_contest.jpg)
+![form](/teste/assets/images/form_create_contest.jpg)
 
 ---
-
-## Passo a passo para entrar no contest
-
-1. É necessário entrar no link [localhost contest](http://localhost/cgi-bin/index.sh);
-2. Realizar o login com a conta e nível desejado;
-
----
-
-## Possíveis erros
-
-Se houve algum erro ao criar um contest em uma instância local certifique se os steps foram seguidos corretamente [Daemons](#daemons), [Exercícios](#exercicios) e [Contest](#contest). Para mais informações entrar no root do seu pc utilizando os comandos abaixo:
-
-```
-sudo -i
-tail -f /var/log/apache2/*.log
-
-```

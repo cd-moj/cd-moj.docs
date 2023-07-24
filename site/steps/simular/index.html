@@ -15,7 +15,7 @@
         <link rel="next" href="../contribuidores/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#simular-login" class="md-skip">
+        <a href="#daemons" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -108,6 +108,8 @@
         </div>
       </div>
     </div>
+    
+      
     
     
     
@@ -557,6 +559,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#daemons" class="md-nav__link">
+    Daemons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#simular-login" class="md-nav__link">
     Simular Login
   </a>
@@ -666,6 +675,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#daemons" class="md-nav__link">
+    Daemons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#simular-login" class="md-nav__link">
     Simular Login
   </a>
@@ -706,6 +722,9 @@
 
   <h1>Simular</h1>
 
+<h2 id="daemons">Daemons</h2>
+<p>O primeiro passo é importante se você esta rodanto uma instância local é subir ambos daemons, executar-corretor.sh e executar-julgador.sh, e se certificar de que ambos estão conversando entre si corretamente. Os comandos para subir ambos daemons são: <code>bash executar-julgador.sh</code> e <code>bash executar-corretor.sh</code></p>
+<hr />
 <h2 id="simular-login">Simular Login</h2>
 <p>Para simular o login em contests siga os passos abaixo:</p>
 <pre><code class="language-bash">$ cp &lt;path para pasta com os arquivos de login&gt;/*:login:* &lt;path para pasta submissions do CD-MOJ&gt;
@@ -730,7 +749,7 @@
 <hr />
 <h2 id="simular-correcao">Simular Correção</h2>
 <p>Para simular resposta do corretor em contests siga os passos abaixo, isso pode ser necessario devido a falto de acesso aos servidores de correção quando se esta desenvolvendo.</p>
-<pre><code class="language-bash">$ cp &lt;path para pasta com os arquivos de corerção&gt;/*:corrigido:* &lt;path para pasta submissions do CD-MOJ&gt;
+<pre><code class="language-bash">$ cp &lt;path para pasta com os arquivos de correção&gt;/*:corrigido:* &lt;path para pasta submissions do CD-MOJ&gt;
 
 </code></pre>
 <p>Ao copiar os arquivos de corerção para a pasta <strong>cd-moj/submissions</strong> o daemon <strong>julgador.sh</strong> fará com que ele percorra seu caminho natural pelo sistema.</p>
@@ -775,10 +794,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": "navigation.tabs", "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": "navigation.tabs", "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>

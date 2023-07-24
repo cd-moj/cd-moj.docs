@@ -158,3 +158,13 @@ chwon -R www-data:www-data ./contests
 chwon -R user.user ./contest/
 sudo chmod 777 submissions/
 ```
+
+### Logs de erros
+
+Se houve algum erro ao criar um contest em uma instância local certifique se os steps foram seguidos corretamente [Daemons](#daemons), [Exercícios](#exercicios) e [Contest](#contest). Para mais informações entrar no root do seu pc utilizando os comandos abaixo:
+
+```
+sudo -i
+tail -f /var/log/apache2/*.log
+
+```

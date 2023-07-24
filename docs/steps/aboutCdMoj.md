@@ -30,3 +30,12 @@
 - **TLE - Time Limit Exceeded **- Indica que a solução do problema demorou muito tempo para ser executada e excedeu o limite estabelecido.
 
 - **CE - Compilation Error** - Indica que a solução não pôde ser compilada devido a erros no código-fonte.
+
+___
+
+### Chamar o Mojinho
+O "Mojinho" é um bot desenvolvido e disponível no Telegram, com o propósito de auxiliar estudantes ao fornecer o log da submissão realizada pelo usuário. Para utilizar o bot, basta pesquisar por "@mojinho_bot" no Telegram e enviar uma mensagem contendo o código da submissão disponível na página do contest no CD-MOJ, seguindo o formato indicado abaixo:
+
+```
+getlog 16353XXXXX:49fec9da0d48b10621bb9b44e3XXXXX
+```
