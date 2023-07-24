@@ -1,3 +1,5 @@
+![logo](/steps/assets/logo.png)
+
 O Contest-Driven Meta Online Judge
 [(CD-MOJ)](https://moj.naquadah.com.br/cgi-bin/index.sh) é um online judge direcionado a contests que despacha os
 códigos para outro "online judge" ao invés de executar e
@@ -27,10 +29,6 @@ geral do sistema é agradável, pois foi desenvolvida por uma
 designer profissional, embora originalmente para outro projeto,
 o que pode explicar algumas inconsistências presentes
 atualmente.
-
-Por enquanto, não temos um logotipo, mas estou aberto a
-sugestões. Se você quiser enviar uma proposta, basta me contatar
-por e-mail, endereço disponível no parágrafo abaixo.
 
 Se você estiver interessado em se tornar um administrador, com
 permissão para criar competições, fique à vontade para enviar um

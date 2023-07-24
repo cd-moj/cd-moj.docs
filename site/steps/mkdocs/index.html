@@ -12,14 +12,14 @@
         <link rel="prev" href="../configuracao/">
       
       
-        <link rel="next" href="../judge/">
+        <link rel="next" href="../contribuicao/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>Contribuição - CD-Moj</title>
+        <title>MkDocs - CD-Moj</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contribuição
+              MkDocs
             
           </span>
         </div>
@@ -228,6 +228,22 @@
     <li class="md-tabs__item">
       <a href="../instalacao/" class="md-tabs__link md-tabs__link--active">
         Desenvolvedor
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../contribuidores/" class="md-tabs__link">
+        Contribuição
       </a>
     </li>
   
@@ -463,12 +479,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Contribuição
+          MkDocs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Contribuição
+        MkDocs
       </a>
       
         
@@ -495,6 +511,13 @@
           <li class="md-nav__item">
   <a href="#mkdocs" class="md-nav__link">
     Mkdocs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comecando" class="md-nav__link">
+    Começando
   </a>
   
 </li>
@@ -540,6 +563,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../contribuicao/" class="md-nav__link">
+        Contribuição
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../judge/" class="md-nav__link">
         Judge
       </a>
@@ -556,6 +593,69 @@
     <li class="md-nav__item">
       <a href="../contest/" class="md-nav__link">
         Contest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simular/" class="md-nav__link">
+        Simular
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Contribuição
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Contribuição
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribuidores/" class="md-nav__link">
+        Contribuidores
       </a>
     </li>
   
@@ -608,6 +708,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#comecando" class="md-nav__link">
+    Começando
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mkdocs-serve" class="md-nav__link">
     mkdocs serve
   </a>
@@ -651,7 +758,7 @@
   
 
 
-  <h1>Contribuição</h1>
+  <h1>MkDocs</h1>
 
 <h2 id="contribuicao">Contribuição</h2>
 <p>Para contribuir com a documentação do CD-MOJ leia esse arquivo para entender o funcionamento da tecnologia utilizada, que é o Mkdocs.</p>
@@ -659,6 +766,12 @@
 <h3 id="mkdocs">Mkdocs</h3>
 <p>O MkDocs utiliza o Markdown, uma linguagem de marcação leve, como formato principal para escrever a documentação. O Markdown oferece uma sintaxe simples que é fácil de ler e escrever, tornando-o acessível tanto para usuários técnicos quanto não técnicos. Com o MkDocs, você pode escrever o conteúdo da sua documentação em arquivos Markdown e, em seguida, gerar um site estático a partir desses arquivos.</p>
 <hr />
+<h3 id="comecando">Começando</h3>
+<p>Faça o clone do repositorio de documentação com o comando:</p>
+<pre><code>git clone https://github.com/cd-moj/cd-moj.docs
+git switch main
+</code></pre>
+<p>Note que a temos duas branchs <strong>gh-deploy</strong> onde estão os arquivos de deploy, a aplicação após o build e <strong>main</strong> onde estão os arquivos source. Assim, as alterações devem ser feitas na branch <strong>main</strong>. para mais informaçẽos acesse a documentação do <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">Mkdocs</a></p>
 <h3 id="mkdocs-serve">mkdocs serve</h3>
 <p>Para subir localmente a aplicação use o comando</p>
 <pre><code>mkdocs serve
@@ -673,6 +786,7 @@
 <p>Para realizar o deploy utilize o comando</p>
 <pre><code>mkdocs gh-deploy
 </code></pre>
+<p>Importante verificar as alterações feitas nos documentos de antemão usando os comandos <strong>build</strong> ou <strong>serve</strong>.</p>
 
 
 
