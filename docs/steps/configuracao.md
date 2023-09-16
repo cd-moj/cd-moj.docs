@@ -161,6 +161,13 @@ mkdir submissions
 sudo chmod 777 submissions/
 ```
 
+Caso esteja utilizando o ubuntu 22.04, estas permissões podem ser úteis:
+```bash
+sudo chmod +x /home/
+sudo chmod +x /home/$USER/
+sudo chmod +x /home/$USER/cdmoj/
+```
+
 ### Logs de erros
 
 Se houve algum erro ao criar um contest em uma instância local certifique se os steps foram seguidos corretamente [Daemons](#daemons), [Exercícios](#exercicios) e [Contest](#contest). Para mais informações entrar no root do seu pc utilizando os comandos abaixo:
