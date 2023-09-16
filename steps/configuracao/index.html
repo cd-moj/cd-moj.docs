@@ -1037,6 +1037,11 @@ chown -R $USER.$USER ./contests/
 mkdir submissions
 sudo chmod 777 submissions/
 </code></pre>
+<p>Caso esteja utilizando o ubuntu 22.04, estas permissões podem ser úteis:</p>
+<pre><code class="language-bash">sudo chmod +x /home/
+sudo chmod +x /home/$USER/
+sudo chmod +x /home/$USER/cdmoj/
+</code></pre>
 <h3 id="logs-de-erros">Logs de erros</h3>
 <p>Se houve algum erro ao criar um contest em uma instância local certifique se os steps foram seguidos corretamente <a href="#daemons">Daemons</a>, <a href="#exercicios">Exercícios</a> e <a href="#contest">Contest</a>. Para mais informações entrar no root do seu pc utilizando os comandos abaixo:</p>
 <pre><code>sudo -i
