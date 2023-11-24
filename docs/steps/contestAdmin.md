@@ -47,6 +47,7 @@ Diretivas
   - **ALLOWLATEUSER** - Quando y permite cadastro posterior de usuário por interação com o bot do telegram **@mojinho** (padrão = n).
   - **SHOWCODE** - Quando 1 mostra o código da submissão. (padrão = 0).
   - **CLARIFICATION** - Quando 1 permite acesso as abas de clarification. (padrão = 0).
+  - **DISABLESUBMIT** - Esta variável permite desabilitar submissões no contest, mesmo que ele esteja em execução. Serve para permitir que os usuários leiam os enunciados, por exemplo, para um trabalho.
 
 Segue um exemplo de um arquivo preenchido
 
@@ -87,7 +88,3 @@ Você tambem pode criar um contest por meio de um formulário, segue os mesmos p
 ![form](/cd-moj.docs/assets/images/form_create_contest.jpg)
 
 ---
-
-## Variável DISABLESUBMIT
-
-Esta variável permite desabilitar submissões no contest, mesmo que ele esteja em execução. Serve para permitir que os usuários leiam os enunciados, por exemplo, para um trabalho.

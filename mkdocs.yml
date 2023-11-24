@@ -41,6 +41,7 @@ nav:
     - Configuração: steps/configuracao.md
     - MkDocs: steps/mkdocs.md
     - Contribuição: steps/contribuicao.md
+    - Como Funciona: steps/comoFunciona.md
     - Judge: steps/judge.md
     - Contest: steps/contest.md
     - Simular: steps/simular.md

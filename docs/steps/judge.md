@@ -10,7 +10,16 @@ O sistema do CD-MOJ é baseado em dois principais daemons, responsáveis por se 
 
 > Daemons são processos executados em segundo plano que observam eventos do sistema ou fornecem funcionalidades a outros processos.
 
-executar-corretor.sh e executar-julgador.sh são os dois daemons que executam os módulos de correção e julgador, a partir do momento em que são identificados novos arquivos no diretório de submissões que é o $SUBMISSIONDIR é disparado o script julgador.sh e quando uma submissão é repassada para o diretorio $SUBMISSIONDIR-enviaroj o script corrige.sh é disparado pelo executar-corretor.sh
+executar-corretor.sh e executar-julgador.sh são os dois daemons que executam os módulos de correção e julgador.
+
+Quando o usuário submete um problema, a submissão é salva dentro do diretório submissions-enviaroj especificado pelo script responsável por tratar das submissões dentro do CD-MOJ. O daemon que executa o corretor fica observando o diretório até que uma submissão seja realizada. Quando uma submissão é identificada, o daemon aciona o script corrige.sh. As validações e verificações dos dados são realizadas e se todas forem aceitas, o problema é enviado para a API específica. Ao retornar com o resultado, o mesmo é devolvido e salvo no database. Essa sequência é demonstrada pelo diagrama:
+
+![corretor](/cd-moj.docs/assets/images/corretor.png)
+
+O daemon responsável por executar o julgador fica esperando os resultados serem salvos e, após esse processo, é acionado o script julgador.sh. Ocorrerão validações e verificações para identificar os fluxos representados na Figura 7, e tais fluxos podem ter a possibilidade de adicionar um novo usuário pelo bot mojinho, realizar um login, criar um contest, rejulgar um problema, além de gravar soluções no database e computar as pontuações das listas, provas ou contests. Esses passos são demonstrados pelo diagrama:
+
+![julgador](/cd-moj.docs/assets/images/julgador.png)
+
 
 ---
 
