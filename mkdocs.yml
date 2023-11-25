@@ -11,7 +11,9 @@ markdown_extensions:
       tags: 'a script img link object embed'
 
 plugins:
-  - mkdocs-video
+  mkdocs-video:
+    is_video: True
+    video_autoplay: False
 
 theme:
   name: material
