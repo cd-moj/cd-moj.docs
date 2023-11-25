@@ -118,43 +118,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Pesquisar">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Inicializando a pesquisa
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         <a href="https://github.com/cd-moj/cd-moj.docs" title="Ir ao repositório" class="md-source" data-md-component="source">
@@ -525,13 +488,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#variavel-disablesubmit" class="md-nav__link">
-    Variável DISABLESUBMIT
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -653,6 +609,26 @@
   
   <span class="md-ellipsis">
     Contribuição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comoFunciona/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Como Funciona
   </span>
   
 
@@ -856,13 +832,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#variavel-disablesubmit" class="md-nav__link">
-    Variável DISABLESUBMIT
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -881,18 +850,19 @@
   
 
 
-<h1 id="guia-para-subir-contest">Guia para subir contest</h1>
+<div><h1 id="guia-para-subir-contest">Guia para subir contest</h1>
+<p><div class="video-container"><iframe src="/cd-moj.docs/assets/videos/comoCriarAdmin.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div><div class="video-container"><iframe src="/cd-moj.docs/assets/videos/criandoContest.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h2 id="contest">Contest</h2>
 <p>O arquivo contest-description.txt deve estar corretamente preenchido e precisa obrigatoriamente estar compactado no formato <strong>.tar</strong> seguindo o exemplo abaixo:</p>
 <h3 id="contest-descriptiontxt">contest-description.txt</h3>
 <p>Dentro de um arquivo de contest deve conter um arquivo chamado <strong>contest-description.txt</strong> e uma pasta chamada <strong>enunciados</strong> e dentro dela deve conter todos os arquivos dos problemas que estarão presentes no contest.</p>
 <p>O arquivo responsável pela criação dos contests deve seguir um modelo específico</p>
 <pre><code>ID_PADRAO_UNIX
-&quot;Nome Completo do Contest&quot;
+"Nome Completo do Contest"
 Data e hora de inicio em segundos
 Data e hora de termino em segundos
 Quantidade problemas
-SITE ID &quot;Nome Completo&quot; item_contest link-enunciado
+SITE ID "Nome Completo" item_contest link-enunciado
 Numero-de-usuarios
 login:senha:Nome Completo
 login.admin:senha:Usuario do Tipo Administrador
@@ -923,17 +893,18 @@ Diretivas
 <li><strong>ALLOWLATEUSER</strong> - Quando y permite cadastro posterior de usuário por interação com o bot do telegram <strong>@mojinho</strong> (padrão = n).</li>
 <li><strong>SHOWCODE</strong> - Quando 1 mostra o código da submissão. (padrão = 0).</li>
 <li><strong>CLARIFICATION</strong> - Quando 1 permite acesso as abas de clarification. (padrão = 0).</li>
+<li><strong>DISABLESUBMIT</strong> - Esta variável permite desabilitar submissões no contest, mesmo que ele esteja em execução. Serve para permitir que os usuários leiam os enunciados, por exemplo, para um trabalho.</li>
 </ul>
 <p>Segue um exemplo de um arquivo preenchido</p>
 <pre><code>doc_cdmoj
-&quot;Documentação CD-MOJ&quot;
+"Documentação CD-MOJ"
 1627804800
 2227420800
 4
-spoj-br PLACAR &quot;Quem vai ser reprovado?&quot; A reprovado.txt
-cdmoj cartasfora &quot;Jogando Cartas Fora&quot; B jogando-cartas-fora.pdf
-spoj-www TEST &quot;Life, the Universe, and Everything&quot; C https://www.spoj.com/problems/TEST/
-spoj-br CONTAGEM &quot;Não é Mais um Joguinho Canadense&quot; D contagem.txt
+spoj-br PLACAR "Quem vai ser reprovado?" A reprovado.txt
+cdmoj cartasfora "Jogando Cartas Fora" B jogando-cartas-fora.pdf
+spoj-www TEST "Life, the Universe, and Everything" C https://www.spoj.com/problems/TEST/
+spoj-br CONTAGEM "Não é Mais um Joguinho Canadense" D contagem.txt
 4
 winchester.admin:senhasecretaADMIN:Dean winchester Administrador
 luffy.mon:senhasecretaMon:Monkey D. luffy Monitor
@@ -942,7 +913,7 @@ ricardo:busao:Ricardo Oliveira
 CLARIFICATION=1
 SHOWCODE=1
 </code></pre>
-<hr />
+<hr>
 <h2 id="passo-a-passo-para-criar-um-contest">Passo a passo para criar um contest</h2>
 <ol>
 <li>É necessário entrar no link de <a href="https://moj.naquadah.com.br/cgi-bin/admin.sh">administrador</a> e realizar o login;</li>
@@ -950,13 +921,11 @@ SHOWCODE=1
 <li>Adicionar o arquivo contest-description.tar na opção "Envie novo contest" e clicar em submit;</li>
 <li>Conferir se o contest foi criado com sucesso observando o Log disponibilizado logo abaixo da aba Old School;</li>
 </ol>
-<hr />
+<hr>
 <h3 id="formulario">Formulário</h3>
 <p>Você tambem pode criar um contest por meio de um formulário, segue os mesmos padrões dos dados explicados em <a href="#contest-descriptiontxt">contest-description</a>.</p>
-<p><img alt="form" src="/cd-moj.docs/assets/images/form_create_contest.jpg" /></p>
-<hr />
-<h2 id="variavel-disablesubmit">Variável DISABLESUBMIT</h2>
-<p>Esta variável permite desabilitar submissões no contest, mesmo que ele esteja em execução. Serve para permitir que os usuários leiam os enunciados, por exemplo, para um trabalho.</p>
+<p><img alt="form" src="/cd-moj.docs/assets/images/form_create_contest.jpg"></p>
+<hr></div>
 
 
 
