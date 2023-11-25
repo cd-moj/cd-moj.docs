@@ -1,3 +1,5 @@
+![type:video](/cd-moj.docs/assets/videos/abaUsuario.mp4)
+
 ### Linguagens suportadas
 
 - Assembly (SPIM)
@@ -8,7 +10,7 @@
 - JavaScript
 - OCaml
 - Pascal
-- Python (2/3)
+- Python 3
 - RISC-V
 - Rust
 - Shell
@@ -19,7 +21,7 @@
 
 - **AC - Accepted** - Indica que a solução do problema passou nos testes e foi aceita.
 
-- **WA- Wrong Answer** - Indica que a solução do problema foi executada sem erros, porém a saída produzida não estava correta de acordo com os testes.
+- **WA - Wrong Answer** - Indica que a solução do problema foi executada sem erros, porém a saída produzida não estava correta de acordo com os testes.
 
 - **RE - Runtime Exception** - Indica que a solução do problema causou uma exceção durante a execução. Esse tipo de erro é mais comum em linguagens como C ou C++. Alguns exemplos de erros possíveis são:
 
@@ -39,3 +41,7 @@ O "Mojinho" é um bot desenvolvido e disponível no Telegram, com o propósito d
 ```
 getlog 16353XXXXX:49fec9da0d48b10621bb9b44e3XXXXX
 ```
+
+### Entendendo o site CD-MOJ
+![type:video](/cd-moj.docs/assets/videos/homeCdmoj.mp4)
+![type:video](/cd-moj.docs/assets/videos/enviandoSubmissao.mp4)

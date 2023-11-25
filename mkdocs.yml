@@ -10,6 +10,9 @@ markdown_extensions:
       absolute: true
       tags: 'a script img link object embed'
 
+plugins:
+  - mkdocs-video
+
 theme:
   name: material
   language: "pt"

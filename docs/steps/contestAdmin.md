@@ -1,5 +1,8 @@
 # Guia para subir contest
 
+![type:video](/cd-moj.docs/assets/videos/comoCriarAdmin.mp4)
+![type:video](/cd-moj.docs/assets/videos/criandoContest.mp4)
+
 ## Contest
 
 O arquivo contest-description.txt deve estar corretamente preenchido e precisa obrigatoriamente estar compactado no formato **.tar** seguindo o exemplo abaixo:
