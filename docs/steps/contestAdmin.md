@@ -1,6 +1,5 @@
 # Guia para subir contest
 
-![type:video](/cd-moj.docs/assets/videos/comoCriarAdmin.mp4)
 ![type:video](/cd-moj.docs/assets/videos/criandoContest.mp4)
 
 ## Contest

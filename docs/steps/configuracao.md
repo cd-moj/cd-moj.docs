@@ -127,6 +127,8 @@ HTMLDIR=$HOME/cdmoj/moj-pagina
 
 ### Criando um administrador
 
+![type:video](/cd-moj.docs/assets/videos/comoCriarAdmin.mp4)
+
 Para criar um contest é necessário um usuário administrador para poder enviar um arquivo com contest ou submeter um formulário com os dados necessários. Para isso é preciso criar um diretório dentro do caminho **/moj/contests/** chamado admin, logo após crie dois arquivos chamados **conf** e **passwd**. Segue o exemplo dos arquivos:
 
 #### conf
