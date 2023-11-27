@@ -47,3 +47,7 @@ Para realizar o deploy utilize o comando
 mkdocs gh-deploy
 ```
 Importante verificar as alterações feitas nos documentos de antemão usando os comandos **build** ou **serve**.
+
+## Erros
+
+As imagens e vídeos não aparecem localmente da forma que estão feitas, mas funcionam no deploy. Se quiser verificar se está correto, modifique localmente e mantenha o padrão realizado para subir no deploy.

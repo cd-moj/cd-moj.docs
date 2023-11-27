@@ -42,16 +42,16 @@ nav:
     - Subindo Contest: steps/contestAdmin.md
 
   - Desenvolvedor:
+    - Como Funciona: steps/comoFunciona.md
     - Instalação: steps/instalacao.md
     - Configuração: steps/configuracao.md
-    - MkDocs: steps/mkdocs.md
-    - Contribuição: steps/contribuicao.md
-    - Como Funciona: steps/comoFunciona.md
     - Judge: steps/judge.md
     - Contest: steps/contest.md
     - Simular: steps/simular.md
+    - Contribuição: steps/contribuicao.md
+    - MkDocs: steps/mkdocs.md
   
-  - Contribuição:
+  - Contribuidores:
     - Contribuidores: steps/contribuidores.md
 
 dev_addr: "0.0.0.0:8000"
