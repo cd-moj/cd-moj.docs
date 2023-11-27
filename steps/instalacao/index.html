@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../contestAdmin/">
+        <link rel="prev" href="../comoFunciona/">
       
       
         <link rel="next" href="../configuracao/">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#instalando-pre-requisitos" class="md-skip">
+        <a href="#instalando-cd-moj" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -207,7 +207,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../comoFunciona/" class="md-tabs__link">
           
   
   Desenvolvedor
@@ -228,7 +228,7 @@
         <a href="../contribuidores/" class="md-tabs__link">
           
   
-  Contribuição
+  Contribuidores
 
         </a>
       </li>
@@ -462,6 +462,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../comoFunciona/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Como Funciona
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -506,15 +526,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalando-pre-requisitos" class="md-nav__link">
-    Instalando pré-requisitos
+  <a href="#instalando-cd-moj" class="md-nav__link">
+    Instalando CD-MOJ
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalando-cd-moj" class="md-nav__link">
-    Instalando CD-MOJ
+  <a href="#instalando-pre-requisitos" class="md-nav__link">
+    Instalando pré-requisitos
   </a>
   
 </li>
@@ -539,66 +559,6 @@
   
   <span class="md-ellipsis">
     Configuração
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mkdocs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    MkDocs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contribuicao/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Contribuição
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../comoFunciona/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Como Funciona
   </span>
   
 
@@ -668,6 +628,46 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribuicao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribuição
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -695,7 +695,7 @@
             
   
   <span class="md-ellipsis">
-    Contribuição
+    Contribuidores
   </span>
   
 
@@ -705,7 +705,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Contribuição
+            Contribuidores
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -761,15 +761,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalando-pre-requisitos" class="md-nav__link">
-    Instalando pré-requisitos
+  <a href="#instalando-cd-moj" class="md-nav__link">
+    Instalando CD-MOJ
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalando-cd-moj" class="md-nav__link">
-    Instalando CD-MOJ
+  <a href="#instalando-pre-requisitos" class="md-nav__link">
+    Instalando pré-requisitos
   </a>
   
 </li>
@@ -794,12 +794,18 @@
 
   <h1>Instalação</h1>
 
-<div><h3 id="instalando-pre-requisitos">Instalando pré-requisitos</h3>
+<div><h3 id="instalando-cd-moj">Instalando CD-MOJ</h3>
+<p>A correta instalação deve ser feita ao utilizar o Makefile disponibilizado no repositório do CD-MOJ. Siga os passos abaixo:</p>
+<pre><code class="language-bash">$ git clone https://github.com/cd-moj/cdmoj.git
+$ cd cdmoj
+$ sudo make SERVERDIR=$HOME/test/server HTMLDIR=$HOME/test/client
+</code></pre>
+<p>Caso algum problema ocorra, utilize os passos contidos abaixo e na configuração:</p>
+<h3 id="instalando-pre-requisitos">Instalando pré-requisitos</h3>
 <pre><code class="language-bash">$ apt update
 $ apt install gcc git apache2 rsync xclip curl default-jre default-jdk openjdk-17-jre openjdk-17-jdk
 </code></pre>
 <hr>
-<h3 id="instalando-cd-moj">Instalando CD-MOJ</h3>
 <pre><code class="language-bash">$ mkdir $HOME/cdmoj
 $ mkdir $HOME/cdmoj/moj
 $ mkdir $HOME/cdmoj/tmp
