@@ -50,6 +50,12 @@ Diretivas
   - **SHOWCODE** - Quando 1 mostra o código da submissão. (padrão = 0).
   - **CLARIFICATION** - Quando 1 permite acesso as abas de clarification. (padrão = 0).
   - **DISABLESUBMIT** - Esta variável permite desabilitar submissões no contest, mesmo que ele esteja em execução. Serve para permitir que os usuários leiam os enunciados, por exemplo, para um trabalho.
+  - **MOJCONTESTSERVERS** - Esta variável permite direcionar as correções das submissões exclusivamente para uma ou mais máquinas específicas. Caso essa variável não seja fornecida, será considerado que o contest pode ser corrigido por qualquer máquina.
+  - **CONTEST_TYPE** - Define o tipo de contest, direcionando-o para a fila de prioridade adequada. Caso essa variável não seja fornecida ou esteja vazia, será considerada a prioridade intermediária de *lista-privada*. Os tipos possíveis são, em ordem da maior para a menor prioridade:
+    - super
+    - prova
+    - lista-privada
+    - lista-publica
 
 Segue um exemplo de um arquivo preenchido
 
@@ -70,6 +76,8 @@ ribas:fiesta:Bruno Ribas
 ricardo:busao:Ricardo Oliveira
 CLARIFICATION=1
 SHOWCODE=1
+MOJCONTESTSERVERS="gpu2 gpu3"
+CONTEST_TYPE=prova
 ```
 
 ---
