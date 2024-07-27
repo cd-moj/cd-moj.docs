@@ -76,7 +76,7 @@ ribas:fiesta:Bruno Ribas
 ricardo:busao:Ricardo Oliveira
 CLARIFICATION=1
 SHOWCODE=1
-MOJCONTESTSERVERS="gpu2:42050 gpu3:42100"
+MOJCONTESTSERVERS="gpu2 gpu3"
 CONTEST_TYPE=prova
 ```
 

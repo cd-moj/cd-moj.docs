@@ -48,6 +48,17 @@ hide:
         </div>
     </div>
     <div>
+        <a href="https://github.com/lucasgcaldas">
+                <img style="border-radius: 50%;" src="https://github.com/lucasgcaldas.png" width="100px;"/>
+                <h5>Lucas Gomes</h5>
+        </a>
+        <div style="display: flex; flex-direction: column">
+            <a href="/cd-moj.docs/steps/projetos/tccLucasGomes" class="image fit">TCC 2023 - 2024</a>
+            <a href="https://github.com/UnB-SAT/tcc-lucas-caldas-moj"> Scripts Escalonador CD-MOJ</a>
+            <a href="https://github.com/cd-moj/cd-moj.docs/commits?author=lucasgcaldas"> Commits Documentação</a>
+        </div>
+    </div>
+        <div>
         <a href="https://github.com/mibasFerraz">
                 <img style="border-radius: 50%;" src="https://github.com/mibasFerraz.png" width="100px;"/>
                 <h5>Lucas Lima</h5>
